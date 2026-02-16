@@ -5,11 +5,11 @@ layout: default
 <article class="tactic">
     <div class="container">
         <nav class="breadcrumb">
-            <a href="{{ site.baseurl }}/">{% include t.html key="home" %}</a>
+            <a href="{{ '/' | relative_url }}">{% include t.html key="home" %}</a>
             <span>/</span>
-            <a href="{{ site.baseurl }}/{{ page.lang }}/qualities/">{% include t.html key="qualities" %}</a>
+            <a href="{{ '/' | append: page.lang | append: '/qualities/' | relative_url }}">{% include t.html key="qualities" %}</a>
             <span>/</span>
-            <a href="{{ site.baseurl }}/{{ page.lang }}/{{ page.quality_characteristic_slug }}/">{{ page.quality_characteristic }}</a>
+            <a href="{{ '/' | append: page.lang | append: '/' | append: page.quality_characteristic_slug | append: '/' | relative_url }}">{{ page.quality_characteristic }}</a>
             <span>/</span>
             <span class="current">{{ page.title }}</span>
         </nav>
@@ -46,7 +46,7 @@ layout: default
         </div>
 
         <nav class="tactic-navigation">
-            <a href="{{ site.baseurl }}/{{ page.lang }}/{{ page.quality_characteristic_slug }}/" class="btn btn-secondary">
+            <a href="{{ '/' | append: page.lang | append: '/' | append: page.quality_characteristic_slug | append: '/' | relative_url }}" class="btn btn-secondary">
                 ← {% include t.html key="back_to_quality" %} {{ page.quality_characteristic }}
             </a>
             <button class="btn btn-secondary share-button" id="shareButton" title="{% if page.lang == 'de' %}Link kopieren{% else %}Copy link{% endif %}">

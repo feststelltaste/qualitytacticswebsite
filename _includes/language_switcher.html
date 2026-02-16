@@ -3,11 +3,11 @@
   {% assign translations = site.tactics | where: "translation_key", page.translation_key %}
   {% for trans in translations %}
     {% if trans.lang == "de" %}
-      <a href="{{ trans.url }}" class="lang-link {% if page.lang == 'de' %}active{% endif %}" title="Deutsch">
+      <a href="{{ trans.url | relative_url }}" class="lang-link {% if page.lang == 'de' %}active{% endif %}" title="Deutsch">
         <img src="{{ '/assets/images/flag-de.svg' | relative_url }}" alt="DE" class="flag-icon" /> DE
       </a>
     {% elsif trans.lang == "en" %}
-      <a href="{{ trans.url }}" class="lang-link {% if page.lang == 'en' %}active{% endif %}" title="English">
+      <a href="{{ trans.url | relative_url }}" class="lang-link {% if page.lang == 'en' %}active{% endif %}" title="English">
         <img src="{{ '/assets/images/flag-gb.svg' | relative_url }}" alt="EN" class="flag-icon" /> EN
       </a>
     {% endif %}

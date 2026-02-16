@@ -2,7 +2,7 @@
     <div class="container">
         <div class="header-content">
             <div class="site-branding">
-                <a href="{{ site.baseurl }}/{{ page.lang | default: 'de' }}/" class="site-logo">
+                <a href="{{ '/' | append: page.lang | default: 'de' | append: '/' | relative_url }}" class="site-logo">
                     <span class="logo-text">
                         {% if page.lang == "en" %}Quality Tactics{% else %}Qualitätstaktiken{% endif %}
                     </span>

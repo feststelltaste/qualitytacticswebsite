@@ -10,5 +10,3 @@ Gemfile.lock
 
 # macOS
 .DS_Store
-
-# Auto-generated tactics (regenerated from CSV)
