@@ -12,7 +12,7 @@ description: "Information about the Quality Tactics book and author Markus Harre
         <div class="book-hero">
             <div class="book-cover">
                 <a href="https://leanpub.com/qualitytactics" target="_blank" rel="noopener">
-                    <img src="/assets/images/book-cover-en.png" alt="Quality Tactics Book Cover" class="cover-image" />
+                    <img src="{{ '/assets/images/book-cover-en.png' | relative_url }}" alt="Quality Tactics Book Cover" class="cover-image" />
                 </a>
             </div>
             <div class="book-info">
@@ -141,7 +141,7 @@ description: "Information about the Quality Tactics book and author Markus Harre
             <a href="https://leanpub.com/qualitytactics" target="_blank" rel="noopener" class="btn btn-primary">
                 Buy on Leanpub
             </a>
-            <p class="cta-note">or <a href="/en/qualities/">use the online version for free</a></p>
+            <p class="cta-note">or <a href="{{ '/en/qualities/' | relative_url }}">use the online version for free</a></p>
         </div>
     </div>
 </div>

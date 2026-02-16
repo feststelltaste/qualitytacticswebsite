@@ -18,7 +18,7 @@ description: "Übersicht über alle Qualitätsmerkmale nach ISO 25010:2011"
             {% assign tactics = lang_tactics | where: "quality_characteristic_slug", quality.slug %}
 
             <article class="quality-item" data-quality="{{ quality.slug }}">
-                <a href="/de/{{ quality.slug }}/" class="quality-link">
+                <a href="{{ '/de/' | append: quality.slug | append: '/' | relative_url }}" class="quality-link">
                     <div class="quality-item-header">
                         <div class="quality-icon-large">{% include emoji.html name=quality.icon alt=quality.name %}</div>
                         <div class="quality-item-content">

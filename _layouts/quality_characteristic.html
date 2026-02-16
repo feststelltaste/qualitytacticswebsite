@@ -5,9 +5,9 @@ layout: default
 <div class="quality-characteristic-page">
     <div class="container">
         <nav class="breadcrumb">
-            <a href="/">{% include t.html key="home" %}</a>
+            <a href="{{ site.baseurl }}/">{% include t.html key="home" %}</a>
             <span>/</span>
-            <a href="/{{ page.lang }}/qualities/">{% include t.html key="qualities" %}</a>
+            <a href="{{ site.baseurl }}/{{ page.lang }}/qualities/">{% include t.html key="qualities" %}</a>
             <span>/</span>
             <span class="current">{{ page.title }}</span>
         </nav>

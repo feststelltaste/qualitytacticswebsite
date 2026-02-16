@@ -9,9 +9,9 @@
             <div class="footer-section">
                 <h3>{% include t.html key="navigation" %}</h3>
                 <ul class="footer-links">
-                    <li><a href="/">{% include t.html key="home" %}</a></li>
-                    <li><a href="/{{ page.lang | default: 'de' }}/qualities/">{% include t.html key="qualities" %}</a></li>
-                    <li><a href="/{{ page.lang | default: 'de' }}/about/">{% include t.html key="about" %}</a></li>
+                    <li><a href="{{ site.baseurl }}/">{% include t.html key="home" %}</a></li>
+                    <li><a href="{{ site.baseurl }}/{{ page.lang | default: 'de' }}/qualities/">{% include t.html key="qualities" %}</a></li>
+                    <li><a href="{{ site.baseurl }}/{{ page.lang | default: 'de' }}/about/">{% include t.html key="about" %}</a></li>
                 </ul>
             </div>
 

@@ -18,7 +18,7 @@ description: "Overview of all quality characteristics according to ISO 25010:201
             {% assign tactics = lang_tactics | where: "quality_characteristic_slug", quality.slug %}
 
             <article class="quality-item" data-quality="{{ quality.slug }}">
-                <a href="/en/{{ quality.slug }}/" class="quality-link">
+                <a href="{{ '/en/' | append: quality.slug | append: '/' | relative_url }}" class="quality-link">
                     <div class="quality-item-header">
                         <div class="quality-icon-large">{% include emoji.html name=quality.icon alt=quality.name %}</div>
                         <div class="quality-item-content">

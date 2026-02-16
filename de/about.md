@@ -12,7 +12,7 @@ description: "Informationen über das Buch Qualitätstaktiken und den Autor Mark
         <div class="book-hero">
             <div class="book-cover">
                 <a href="https://leanpub.com/qualitaetstaktiken" target="_blank" rel="noopener">
-                    <img src="/assets/images/book-cover-de.png" alt="Qualitätstaktiken Buchcover" class="cover-image" />
+                    <img src="{{ '/assets/images/book-cover-de.png' | relative_url }}" alt="Qualitätstaktiken Buchcover" class="cover-image" />
                 </a>
             </div>
             <div class="book-info">
@@ -142,7 +142,7 @@ description: "Informationen über das Buch Qualitätstaktiken und den Autor Mark
             <a href="https://leanpub.com/qualitaetstaktiken" target="_blank" rel="noopener" class="btn btn-primary">
                 Auf Leanpub kaufen
             </a>
-            <p class="cta-note">oder <a href="/de/qualities/">kostenlos die Online-Version nutzen</a></p>
+            <p class="cta-note">oder <a href="{{ '/de/qualities/' | relative_url }}">kostenlos die Online-Version nutzen</a></p>
         </div>
     </div>
 </div>
