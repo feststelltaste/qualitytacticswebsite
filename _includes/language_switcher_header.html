@@ -10,11 +10,11 @@ Header Language Switcher - Shows language options based on current page
       {% assign translations = site.tactics | where: "translation_key", page.translation_key %}
       {% for trans in translations %}
         {% if trans.lang != page.lang %}
-          <a href="{{ trans.url }}" class="lang-link" title="{% if trans.lang == 'de' %}Deutsch{% else %}English{% endif %}">
+          <a href="{{ trans.url | relative_url }}" class="lang-link" title="{% if trans.lang == 'de' %}Deutsch{% else %}English{% endif %}">
             {% if trans.lang == "de" %}
-              <img src="/assets/images/flag-de.svg" alt="DE" class="flag-icon" /> DE
+              <img src="{{ '/assets/images/flag-de.svg' | relative_url }}" alt="DE" class="flag-icon" /> DE
             {% else %}
-              <img src="/assets/images/flag-gb.svg" alt="EN" class="flag-icon" /> EN
+              <img src="{{ '/assets/images/flag-gb.svg' | relative_url }}" alt="EN" class="flag-icon" /> EN
             {% endif %}
           </a>
         {% endif %}
@@ -44,11 +44,11 @@ Header Language Switcher - Shows language options based on current page
           {% endif %}
         {% endif %}
       {% endif %}
-      <a href="{{ other_path }}" class="lang-link" title="{% if other_lang == 'de' %}Deutsch{% else %}English{% endif %}">
+      <a href="{{ other_path | relative_url }}" class="lang-link" title="{% if other_lang == 'de' %}Deutsch{% else %}English{% endif %}">
         {% if other_lang == "de" %}
-          <img src="/assets/images/flag-de.svg" alt="DE" class="flag-icon" /> DE
+          <img src="{{ '/assets/images/flag-de.svg' | relative_url }}" alt="DE" class="flag-icon" /> DE
         {% else %}
-          <img src="/assets/images/flag-gb.svg" alt="EN" class="flag-icon" /> EN
+          <img src="{{ '/assets/images/flag-gb.svg' | relative_url }}" alt="EN" class="flag-icon" /> EN
         {% endif %}
       </a>
     {% endif %}
@@ -56,11 +56,11 @@ Header Language Switcher - Shows language options based on current page
 {% else %}
   {% comment %}Root page - show both languages{% endcomment %}
   <div class="language-switcher-header">
-    <a href="/de/" class="lang-link" title="Deutsch">
-      <img src="/assets/images/flag-de.svg" alt="DE" class="flag-icon" /> DE
+    <a href="{{ '/de/' | relative_url }}" class="lang-link" title="Deutsch">
+      <img src="{{ '/assets/images/flag-de.svg' | relative_url }}" alt="DE" class="flag-icon" /> DE
     </a>
-    <a href="/en/" class="lang-link" title="English">
-      <img src="/assets/images/flag-gb.svg" alt="EN" class="flag-icon" /> EN
+    <a href="{{ '/en/' | relative_url }}" class="lang-link" title="English">
+      <img src="{{ '/assets/images/flag-gb.svg' | relative_url }}" alt="EN" class="flag-icon" /> EN
     </a>
   </div>
 {% endif %}
