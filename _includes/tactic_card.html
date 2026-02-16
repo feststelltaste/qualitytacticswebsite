@@ -1,5 +1,5 @@
 <article class="tactic-card" data-quality="{{ include.tactic.quality_characteristic_slug }}">
-    <a href="{{ include.tactic.url }}" class="card-content">
+    <a href="{{ include.tactic.url | relative_url }}" class="card-content">
         {% if include.tactic.quality %}
         <p class="card-quality">{{ include.tactic.quality }}</p>
         {% endif %}
