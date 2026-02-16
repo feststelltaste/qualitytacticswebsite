@@ -1,0 +1,69 @@
+---
+layout: default
+---
+
+<article class="tactic">
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="/">{% include t.html key="home" %}</a>
+            <span>/</span>
+            <a href="/{{ page.lang }}/qualities/">{% include t.html key="qualities" %}</a>
+            <span>/</span>
+            <a href="/{{ page.lang }}/{{ page.quality_characteristic_slug }}/">{{ page.quality_characteristic }}</a>
+            <span>/</span>
+            <span class="current">{{ page.title }}</span>
+        </nav>
+
+        <header class="tactic-header" data-quality="{{ page.quality_characteristic_slug }}">
+            <div class="tactic-meta">
+                {% if page.quality %}
+                <div class="tactic-quality">
+                    {{ page.quality }}
+                </div>
+                {% endif %}
+                {% assign quality_synth_trimmed = page.quality_synth | strip %}
+                {% if quality_synth_trimmed != "" %}
+                <div class="tactic-quality-synth">
+                    {% if page.lang == 'de' %}Fördert auch:{% else %}Also supports:{% endif %} {{ page.quality_synth }}
+                </div>
+                {% endif %}
+            </div>
+
+            <h1>{{ page.title }}</h1>
+            {% if page.short %}
+            <p class="tactic-short">{{ page.short }}</p>
+            {% endif %}
+
+            {% if page.hashtags %}
+            <div class="tactic-hashtags">
+                {{ page.hashtags }}
+            </div>
+            {% endif %}
+        </header>
+
+        <div class="tactic-content">
+            {{ content }}
+        </div>
+
+        <nav class="tactic-navigation">
+            <a href="/{{ page.lang }}/{{ page.quality_characteristic_slug }}/" class="btn btn-secondary">
+                ← {% include t.html key="back_to_quality" %} {{ page.quality_characteristic }}
+            </a>
+            <button class="btn btn-secondary share-button" id="shareButton" title="{% if page.lang == 'de' %}Link kopieren{% else %}Copy link{% endif %}">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+                <span class="share-text">{% if page.lang == 'de' %}Link kopieren{% else %}Copy link{% endif %}</span>
+            </button>
+        </nav>
+
+        <!-- Toast notification -->
+        <div id="copyToast" class="copy-toast">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>{% if page.lang == 'de' %}Link kopiert!{% else %}Link copied!{% endif %}</span>
+        </div>
+    </div>
+</article>

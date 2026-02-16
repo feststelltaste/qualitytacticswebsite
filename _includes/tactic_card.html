@@ -1,0 +1,20 @@
+<article class="tactic-card" data-quality="{{ include.tactic.quality_characteristic_slug }}">
+    <a href="{{ include.tactic.url }}" class="card-content">
+        {% if include.tactic.quality %}
+        <p class="card-quality">{{ include.tactic.quality }}</p>
+        {% endif %}
+        {% assign quality_synth_trimmed = include.tactic.quality_synth | strip %}
+        {% if quality_synth_trimmed != "" %}
+        <p class="card-quality-synth">{% if include.tactic.lang == "de" %}Fördert auch:{% else %}Also supports:{% endif %} {{ include.tactic.quality_synth }}</p>
+        {% else %}
+        <p class="card-quality-synth-spacer"></p>
+        {% endif %}
+        <h3 class="card-title">{{ include.tactic.title }}</h3>
+        {% if include.tactic.short %}
+        <p class="card-description">{{ include.tactic.short }}</p>
+        {% endif %}
+        {% if include.tactic.hashtags %}
+        <p class="card-hashtags">{{ include.tactic.hashtags }}</p>
+        {% endif %}
+    </a>
+</article>

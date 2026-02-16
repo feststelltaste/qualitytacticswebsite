@@ -1,0 +1,91 @@
+de:
+  - name: "Funktionale Eignung"
+    slug: "funktionale-eignung"
+    description: "Grad, zu dem ein Produkt oder System Funktionen bereitstellt, die ausgesprochene und implizierte Erfordernisse erfüllen"
+    icon: "check-mark"
+
+  - name: "Benutzbarkeit"
+    slug: "benutzbarkeit"
+    description: "Grad, zu dem ein Produkt oder System durch bestimmte Benutzer genutzt werden kann"
+    icon: "person"
+
+  - name: "Zuverlässigkeit"
+    slug: "zuverlaessigkeit"
+    description: "Grad, zu dem ein System festgelegte Funktionen unter festgelegten Bedingungen ausführt"
+    icon: "shield"
+
+  - name: "Leistungseffizienz"
+    slug: "leistungseffizienz"
+    description: "Leistung im Verhältnis zu der Menge der eingesetzten Betriebsmittel"
+    icon: "lightning"
+
+  - name: "Sicherheit"
+    slug: "sicherheit"
+    description: "Grad, zu dem ein Produkt oder System Informationen und Daten schützt"
+    icon: "lock"
+
+  - name: "Wartbarkeit"
+    slug: "wartbarkeit"
+    description: "Grad der Effektivität und Effizienz, mit dem ein Produkt modifiziert werden kann"
+    icon: "wrench"
+
+  - name: "Kompatibilität"
+    slug: "kompatibilitaet"
+    description: "Grad, zu dem ein Produkt Informationen mit anderen Produkten austauschen kann"
+    icon: "link"
+
+  - name: "Übertragbarkeit"
+    slug: "uebertragbarkeit"
+    description: "Grad der Effektivität und Effizienz, mit dem ein System übertragen werden kann"
+    icon: "package"
+
+  - name: "Qualitätsillusionen"
+    slug: "qualitaetsillusionen"
+    description: "Vermeintliche Qualitätsverbesserungen, die keine echten Verbesserungen darstellen"
+    icon: "thought-balloon"
+
+en:
+  - name: "Functional Suitability"
+    slug: "functional-suitability"
+    description: "Degree to which a product or system provides functions that meet stated and implied needs"
+    icon: "check-mark"
+
+  - name: "Usability"
+    slug: "usability"
+    description: "Degree to which a product or system can be used by specified users"
+    icon: "person"
+
+  - name: "Reliability"
+    slug: "reliability"
+    description: "Degree to which a system performs specified functions under specified conditions"
+    icon: "shield"
+
+  - name: "Performance Efficiency"
+    slug: "performance-efficiency"
+    description: "Performance relative to the amount of resources used"
+    icon: "lightning"
+
+  - name: "Security"
+    slug: "security"
+    description: "Degree to which a product or system protects information and data"
+    icon: "lock"
+
+  - name: "Maintainability"
+    slug: "maintainability"
+    description: "Degree of effectiveness and efficiency with which a product can be modified"
+    icon: "wrench"
+
+  - name: "Compatibility"
+    slug: "compatibility"
+    description: "Degree to which a product can exchange information with other products"
+    icon: "link"
+
+  - name: "Portability"
+    slug: "portability"
+    description: "Degree of effectiveness and efficiency with which a system can be transferred"
+    icon: "package"
+
+  - name: "Quality Illusions"
+    slug: "quality-illusions"
+    description: "Supposed quality improvements that do not represent real improvements"
+    icon: "thought-balloon"

@@ -1,0 +1,24 @@
+# Quality characteristic slug mappings between languages
+# German slug → English slug
+de_to_en:
+  funktionale-eignung: functional-suitability
+  benutzbarkeit: usability
+  zuverlaessigkeit: reliability
+  leistungseffizienz: performance-efficiency
+  sicherheit: security
+  wartbarkeit: maintainability
+  kompatibilitaet: compatibility
+  uebertragbarkeit: portability
+  qualitaetsillusionen: quality-illusions
+
+# English slug → German slug
+en_to_de:
+  functional-suitability: funktionale-eignung
+  usability: benutzbarkeit
+  reliability: zuverlaessigkeit
+  performance-efficiency: leistungseffizienz
+  security: sicherheit
+  maintainability: wartbarkeit
+  compatibility: kompatibilitaet
+  portability: uebertragbarkeit
+  quality-illusions: qualitaetsillusionen

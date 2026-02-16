@@ -1,0 +1,8 @@
+{% comment %}
+Renders a Fluent UI emoji
+Parameters:
+  - name: emoji filename (without .svg)
+  - alt: alt text for accessibility
+  - class: optional CSS class
+{% endcomment %}
+<img src="/assets/images/emojis/{{ include.name }}.svg" alt="{{ include.alt | default: include.name }}" class="emoji {{ include.class }}" loading="lazy" />

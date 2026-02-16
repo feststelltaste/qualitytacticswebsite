@@ -1,0 +1,16 @@
+{% if page.translation_key and page.has_translation %}
+<div class="language-switcher">
+  {% assign translations = site.tactics | where: "translation_key", page.translation_key %}
+  {% for trans in translations %}
+    {% if trans.lang == "de" %}
+      <a href="{{ trans.url }}" class="lang-link {% if page.lang == 'de' %}active{% endif %}" title="Deutsch">
+        <img src="/assets/images/flag-de.svg" alt="DE" class="flag-icon" /> DE
+      </a>
+    {% elsif trans.lang == "en" %}
+      <a href="{{ trans.url }}" class="lang-link {% if page.lang == 'en' %}active{% endif %}" title="English">
+        <img src="/assets/images/flag-gb.svg" alt="EN" class="flag-icon" /> EN
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+{% endif %}

@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="quality-characteristic-page">
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="/">{% include t.html key="home" %}</a>
+            <span>/</span>
+            <a href="/{{ page.lang }}/qualities/">{% include t.html key="qualities" %}</a>
+            <span>/</span>
+            <span class="current">{{ page.title }}</span>
+        </nav>
+
+        <header class="page-header quality-page-header">
+            <span class="quality-icon-heading">{% include emoji.html name=page.icon alt=page.title %}</span>
+            <h1>{{ page.title }}</h1>
+        </header>
+
+        <div class="page-content">
+            {{ content }}
+        </div>
+
+        {% assign lang_tactics = site.tactics | where: "lang", page.lang %}
+        {% assign tactics = lang_tactics | where: "quality_characteristic_slug", page.slug | sort: "order" %}
+
+        {% if tactics.size > 0 %}
+        <section class="tactics-list">
+            <h2>{% include t.html key="tactics" %} ({{ tactics.size }})</h2>
+
+            <div class="tactics-grid">
+                {% for tactic in tactics %}
+                {% include tactic_card.html tactic=tactic %}
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
+    </div>
+</div>

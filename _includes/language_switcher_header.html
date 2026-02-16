@@ -1,0 +1,66 @@
+{% comment %}
+Header Language Switcher - Shows language options based on current page
+{% endcomment %}
+
+{% if page.lang %}
+  {% comment %}Language-specific page{% endcomment %}
+  <div class="language-switcher-header">
+    {% if page.translation_key and page.has_translation %}
+      {% comment %}Tactic or page with translation{% endcomment %}
+      {% assign translations = site.tactics | where: "translation_key", page.translation_key %}
+      {% for trans in translations %}
+        {% if trans.lang != page.lang %}
+          <a href="{{ trans.url }}" class="lang-link" title="{% if trans.lang == 'de' %}Deutsch{% else %}English{% endif %}">
+            {% if trans.lang == "de" %}
+              <img src="/assets/images/flag-de.svg" alt="DE" class="flag-icon" /> DE
+            {% else %}
+              <img src="/assets/images/flag-gb.svg" alt="EN" class="flag-icon" /> EN
+            {% endif %}
+          </a>
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      {% comment %}Regular page - switch to same path in other language{% endcomment %}
+      {% if page.lang == "de" %}
+        {% assign other_lang = "en" %}
+        {% assign other_path = page.url | replace: "/de/", "/en/" %}
+
+        {% comment %}Check if this is a quality characteristic page (has slug in frontmatter){% endcomment %}
+        {% if page.slug %}
+          {% assign translated_slug = site.data.quality_slug_mapping.de_to_en[page.slug] %}
+          {% if translated_slug %}
+            {% assign other_path = "/en/" | append: translated_slug | append: "/" %}
+          {% endif %}
+        {% endif %}
+      {% else %}
+        {% assign other_lang = "de" %}
+        {% assign other_path = page.url | replace: "/en/", "/de/" %}
+
+        {% comment %}Check if this is a quality characteristic page (has slug in frontmatter){% endcomment %}
+        {% if page.slug %}
+          {% assign translated_slug = site.data.quality_slug_mapping.en_to_de[page.slug] %}
+          {% if translated_slug %}
+            {% assign other_path = "/de/" | append: translated_slug | append: "/" %}
+          {% endif %}
+        {% endif %}
+      {% endif %}
+      <a href="{{ other_path }}" class="lang-link" title="{% if other_lang == 'de' %}Deutsch{% else %}English{% endif %}">
+        {% if other_lang == "de" %}
+          <img src="/assets/images/flag-de.svg" alt="DE" class="flag-icon" /> DE
+        {% else %}
+          <img src="/assets/images/flag-gb.svg" alt="EN" class="flag-icon" /> EN
+        {% endif %}
+      </a>
+    {% endif %}
+  </div>
+{% else %}
+  {% comment %}Root page - show both languages{% endcomment %}
+  <div class="language-switcher-header">
+    <a href="/de/" class="lang-link" title="Deutsch">
+      <img src="/assets/images/flag-de.svg" alt="DE" class="flag-icon" /> DE
+    </a>
+    <a href="/en/" class="lang-link" title="English">
+      <img src="/assets/images/flag-gb.svg" alt="EN" class="flag-icon" /> EN
+    </a>
+  </div>
+{% endif %}
