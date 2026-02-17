@@ -8,7 +8,7 @@ title: "Start"
     <section class="hero">
         <div class="container">
             <h1 class="hero-title">Qualitätstaktiken</h1>
-            <p class="hero-subtitle">Umfassendes Handbuch für Software-Architekten</p>
+            <p class="hero-subtitle">Qualität in Softwaresystemen gezielt erreichen: Ein Überblick</p>
             <p class="hero-description">
                 Über 450 bewährte Qualitätstaktiken zur Verbesserung der Qualität von Softwaresystemen.
                 Basierend auf ISO 25010:2011. Die Taktiken sind von den naheliegendsten bis zu den selten betrachteten geordnet.

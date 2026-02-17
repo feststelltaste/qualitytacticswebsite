@@ -8,7 +8,7 @@ title: "Home"
     <section class="hero">
         <div class="container">
             <h1 class="hero-title">Quality Tactics</h1>
-            <p class="hero-subtitle">Comprehensive handbook for software architects</p>
+            <p class="hero-subtitle">A Systematic Approach to Achieving Quality in Software Systems: An Overview.</p>
             <p class="hero-description">
                 Over 400 proven quality tactics to improve the quality of software systems.
                 Based on ISO 25010:2011. The tactics are ordered from the most obvious to the seldom considered ones.
