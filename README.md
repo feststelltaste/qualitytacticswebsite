@@ -1,6 +1,6 @@
-# Quality Tactics - Multilingual Jekyll Website
+# Quality Tactics
 
-A microsite for giving ideas on how to achieve quality through quality tactics.
+A microsite for providing ideas on how to achieve quality through quality tactics.
 
 ## What are quality tactics?
 
