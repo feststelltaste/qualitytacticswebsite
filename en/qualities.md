@@ -34,5 +34,11 @@ description: "Overview of all quality characteristics according to ISO 25010:201
             </article>
             {% endfor %}
         </div>
+
+        <p style="text-align: center; margin-top: 3rem;">
+            <a href="https://github.com/feststelltaste/qualitytacticswebsite/issues/new?title=New%20quality%20tactic%3A%20" target="_blank" rel="noopener noreferrer" style="color: #666; text-decoration: none; font-size: 0.9rem;">
+                Anything missing? Propose a new quality tactic →
+            </a>
+        </p>
     </div>
 </div>

@@ -33,6 +33,12 @@ layout: default
                 {% include tactic_card.html tactic=tactic %}
                 {% endfor %}
             </div>
+
+            <p style="text-align: center; margin-top: 3rem;">
+                <a href="https://github.com/feststelltaste/qualitytacticswebsite/issues/new?title={% if page.lang == 'de' %}Neue%20Qualit%C3%A4tstaktik%20f%C3%BCr%20{{ page.title | url_encode }}%3A%20{% else %}New%20quality%20tactic%20for%20{{ page.title | url_encode }}%3A%20{% endif %}" target="_blank" rel="noopener noreferrer" style="color: #666; text-decoration: none; font-size: 0.9rem;">
+                    {% if page.lang == 'de' %}Etwas fehlt? Neue Qualitätstaktik vorschlagen →{% else %}Anything missing? Propose a new quality tactic →{% endif %}
+                </a>
+            </p>
         </section>
         {% endif %}
     </div>

@@ -14,6 +14,8 @@ layout: default
             <span class="current">{{ page.title }}</span>
         </nav>
 
+        <h1>{% if page.lang == 'de' %}Qualitätstaktik für {{ page.quality_characteristic }}{% else %}Quality tactic for {{ page.quality_characteristic }}{% endif %}</h1>
+
         <header class="tactic-header" data-quality="{{ page.quality_characteristic_slug }}">
             <div class="tactic-meta">
                 {% if page.quality %}
@@ -46,8 +48,11 @@ layout: default
         </div>
 
         <nav class="tactic-navigation">
-            <a href="{{ '/' | append: page.lang | append: '/' | append: page.quality_characteristic_slug | append: '/' | relative_url }}" class="btn btn-secondary">
-                ← {% include t.html key="back_to_quality" %} {{ page.quality_characteristic }}
+            <a href="{{ '/' | append: page.lang | append: '/' | append: page.quality_characteristic_slug | append: '/' | relative_url }}" class="btn btn-outline-quality">
+                ← {% if page.lang == 'de' %}Zurück{% else %}Back{% endif %}
+            </a>
+            <a href="https://github.com/feststelltaste/qualitytacticswebsite/issues/new?title=Feedback%20{% if page.lang == 'de' %}zu{% else %}on{% endif %}%20{{ page.title | url_encode }}%20({{ page.quality_characteristic | url_encode }})" target="_blank" rel="noopener noreferrer" style="color: #666; text-decoration: none; font-size: 0.9rem;">
+                Feedback →
             </a>
             <button class="btn btn-secondary share-button" id="shareButton" title="{% if page.lang == 'de' %}Link kopieren{% else %}Copy link{% endif %}">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

@@ -307,6 +307,16 @@ h1 {
     }
   }
 
+  &.btn-outline-quality {
+    background: transparent;
+    color: $text-color;
+    border: 2px solid $border-color;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.02);
+    }
+  }
+
   &.btn-large {
     padding: 1rem 2rem;
     font-size: 1.125rem;
@@ -574,10 +584,16 @@ h1 {
   }
 }
 
+// Tactic page specific breadcrumb spacing
+.tactic .breadcrumb {
+  margin-bottom: 3rem;
+}
+
 // Tactic Page
 .tactic {
   .tactic-header {
     margin-bottom: 3rem;
+    margin-top: 3rem;
     padding: 2rem;
     border: 2px solid $border-color;
     border-radius: 0.5rem;
@@ -674,6 +690,22 @@ h1 {
       @media (max-width: 768px) {
         .share-text {
           display: none;
+        }
+      }
+    }
+  }
+
+  // Quality-specific border colors for outline buttons
+  @each $slug, $color in $quality-colors {
+    &[data-quality="#{$slug}"] {
+      .btn-outline-quality {
+        border-color: $color;
+        color: $color;
+        background: rgba($color, 0.1);
+
+        &:hover {
+          background: rgba($color, 0.15);
+          border-color: darken($color, 10%);
         }
       }
     }
