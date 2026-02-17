@@ -6,4 +6,4 @@ slug: "benutzbarkeit"
 icon: "person"
 ---
 
-Hier finden Sie alle Taktiken zum Qualitätsmerkmal **Benutzbarkeit**.
+Taktiken zum Qualitätsmerkmal **Benutzbarkeit**.

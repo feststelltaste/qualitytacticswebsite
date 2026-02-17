@@ -6,4 +6,4 @@ slug: "quality-illusions"
 icon: "thought-balloon"
 ---
 
-Here you will find all tactics for the quality characteristic **Quality Illusions**.
+Here you will find all **Quality Illusions**: Tricks, workarounds, and other methods that merely simulate quality.

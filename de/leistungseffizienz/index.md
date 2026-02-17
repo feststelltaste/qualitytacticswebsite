@@ -6,4 +6,4 @@ slug: "leistungseffizienz"
 icon: "lightning"
 ---
 
-Hier finden Sie alle Taktiken zum Qualitätsmerkmal **Leistungseffizienz**.
+Taktiken zum Qualitätsmerkmal **Leistungseffizienz**.

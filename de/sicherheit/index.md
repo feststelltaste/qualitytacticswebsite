@@ -6,4 +6,4 @@ slug: "sicherheit"
 icon: "lock"
 ---
 
-Hier finden Sie alle Taktiken zum Qualitätsmerkmal **Sicherheit**.
+Taktiken zum Qualitätsmerkmal **Sicherheit**.

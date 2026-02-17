@@ -6,4 +6,4 @@ slug: "wartbarkeit"
 icon: "wrench"
 ---
 
-Hier finden Sie alle Taktiken zum Qualitätsmerkmal **Wartbarkeit**.
+Taktiken zum Qualitätsmerkmal **Wartbarkeit**.

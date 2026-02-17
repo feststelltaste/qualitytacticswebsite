@@ -6,4 +6,4 @@ slug: "zuverlaessigkeit"
 icon: "shield"
 ---
 
-Hier finden Sie alle Taktiken zum Qualitätsmerkmal **Zuverlässigkeit**.
+Taktiken zum Qualitätsmerkmal **Zuverlässigkeit**.

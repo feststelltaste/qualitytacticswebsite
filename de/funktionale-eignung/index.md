@@ -6,4 +6,4 @@ slug: "funktionale-eignung"
 icon: "check-mark"
 ---
 
-Hier finden Sie alle Taktiken zum Qualitätsmerkmal **Funktionale Eignung**.
+Taktiken zum Qualitätsmerkmal **Funktionale Eignung**.

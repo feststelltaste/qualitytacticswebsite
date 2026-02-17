@@ -6,4 +6,4 @@ slug: "uebertragbarkeit"
 icon: "package"
 ---
 
-Hier finden Sie alle Taktiken zum Qualitätsmerkmal **Übertragbarkeit**.
+Taktiken zum Qualitätsmerkmal **Übertragbarkeit**.

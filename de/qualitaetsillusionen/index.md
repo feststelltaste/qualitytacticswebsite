@@ -6,4 +6,4 @@ slug: "qualitaetsillusionen"
 icon: "thought-balloon"
 ---
 
-Hier finden Sie alle Taktiken zum Qualitätsmerkmal **Qualitätsillusionen**.
+**Qualitätsillusionen**
