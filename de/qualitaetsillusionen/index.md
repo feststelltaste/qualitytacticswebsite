@@ -6,4 +6,4 @@ slug: "qualitaetsillusionen"
 icon: "thought-balloon"
 ---
 
-**Qualitätsillusionen**
+**Qualitätsillusionen**: Schummeleien, Workarounds und Weiteres, welche nur Qualität simulieren
